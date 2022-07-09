@@ -1,0 +1,229 @@
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+
+    --font-padrao: Arial, Verdana, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;   
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--color0);
+    font-family: var(--font-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517'
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color3), var(--color5));
+    color: #fff;
+    min-height: 150px;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.498);
+    transition-duration: 0.5s;
+    padding: 20px;
+}
+
+header > h1:hover {
+    
+    font-size: 5em;
+    color: var(--color3);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.498);
+    transition-duration: 0.5s;
+}
+
+header > p {
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.501);
+    transition-duration: 0.5s; 
+    padding-bottom: 20px;   
+}
+
+header > p:hover {
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.501);
+    transition-duration: 0.5s;
+    font-size: 1.5em;
+    color: var(--color3);
+}
+
+nav {
+    background-color: var(--color5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--color3);
+    color: var(--color5);
+    border-radius: 5px;
+}
+
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.429);
+}
+
+div.video {
+    background-color: var(--color5);
+    margin: 0px -20px;
+    padding: 20px;
+    
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 0px 20px;
+}
+
+main a {
+    text-decoration: none;
+    color:var(--color5);
+    font-weight: bold;
+    background-color: var(--color3);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main a:hover{
+    background-color: var(--color1);
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+    background-color: var(--color1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main img {
+    width: 100%;
+}
+main img.pequena {
+    max-width:350px;
+    display: block;
+    margin: auto;
+}
+
+main h1{
+    color: var(--color4);
+    font-family: var(--font-android);
+    padding-top: 10px;
+    text-align: center;
+}
+main h2 {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+strong {
+    color:var(--color5);
+}
+
+footer {
+    background-color: var(--color5);
+    color: #fff;
+    text-align: center;
+    font: size 0.8em;
+    padding: 5px;
+}
+
+aside {
+    margin-top: 25px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.38);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    margin-left: 25px;
+}
+
+aside > h3 {
+    color: white;
+    text-align: center;
+    background-color: var(--color4);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer:hover {
+    background-color: var(--color3);
+}
